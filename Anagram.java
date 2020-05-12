@@ -1,3 +1,5 @@
+//there is 3 type to check weather string is anagram or not . 
+
 public class Anagram{
 	
 		
