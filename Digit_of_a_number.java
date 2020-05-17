@@ -13,8 +13,8 @@ public class Digit{
           System.out.println("the number of digit is "+nod);  
           
           int div = (int)Math.pow(10,nod-1);
-         
-          while(n != 0){
+                     
+          while(div != 0){ // { while(n!=0) is not work perfectly }
               int q = n/div;
               System.out.println(q);
               n=n%div;
