@@ -235,6 +235,260 @@ public class Patterns{
 // 144 233 377 610 987 
 // 1597 2584 4181 6765 10946 17711 
         
+       
+//        int n=7;
+//        int space =n/2;
+//        int star = 1;
+//        int k =1;
+//        
+//        for(int i=0;i<n;i++){
+//        
+//            for(int j=0;j<space;j++)
+//            {
+//                System.out.print("  ");
+//            }
+//            int cval = k;
+//             for(int j=1;j<=star;j++)
+//            {
+//                System.out.print(" "+cval+" ");
+//                if(j<n/2){
+//                cval++;
+//                }else{
+//                    cval--;
+//                }
+//                
+//            }
+//           
+//             if(i<n/2){
+//                 space--;
+//                 star = star+2;
+//                 k++;
+//             }else{
+//                 space++;
+//                 star = star-2;
+//                   k--;      
+//             }
+//            System.out.println("");
+//            
+//        }
+// output
+//          1 
+//     2  3  4 
+//   3  4  5  4  3 
+// 4  5  6  5  4  3  2 
+//   3  4  5  4  3 
+//     2  3  4 
+//       1 
+            
+//    int n=4;
+//    int sp = 2*n-3;
+//    int st =1;
+//    
+//    for(int i=0;i<n;i++){
+//        int val =1;
+//        for(int j=0;j<st;j++){
+//           
+//            System.out.print(val);
+//             val++;
+//        }
+//        for(int j=0;j<sp;j++){
+//            System.out.print(" ");
+//        }
+//        if(i==n-1){
+//            st--;
+//            val--;
+//        }
+//        for(int j=0;j<st;j++){
+//            val--;
+//            System.out.print(val);
+//        }
+//        sp = sp-2;
+//        
+//        st++;
+//        
+//        System.out.println("");
+//    
+//        }
+//output
+//1     1
+//12   21
+//123 321
+//1234321
+
+//        int n=7;
+//        
+//        int sp = n/2;
+//       int st =1;
+//       
+//       for(int i=0;i<n;i++){
+//           if(i==n/2){
+//               for(int j=0;j<st-1;j++){
+//               System.out.print("*\t");
+//               sp =0;
+//           }
+//           }
+//           for(int j=0;j<sp;j++){
+//               System.out.print("\t");
+//           }
+//           
+//           
+//           for(int j=0;j<st;j++){
+//               System.out.print("*\t");
+//           }
+//         
+//           
+//        if(i<n/2){
+//            st++;
+//            
+//        }else{
+//            st--; 
+//             sp = n/2;
+//          
+//        }
+//           
+//           System.out.println("");
+//           
+//       }
+//output // it is a arrow shape (:
+//		        *	
+//			*	*	
+//			*	*	*	
+//*	*	*	*	*	*	*	
+//			*	*	*	
+//			*	*	
+//			*	
+
+
+
+
+
+
+
+
+//        int n=7;// Assumption - input must be odd for perfact shape;
+//        
+//       int sp =0;
+//       int st = n;
+//      
+//       for(int i=1;i<=n;i++){
+//           for(int j=1;j<=sp;j++){
+//               System.out.print(" ");
+//           }
+//           
+//           for(int j=1;j<=st;j++){
+//               if(i>1 && i<=n/2 && j > 1 && j < st){
+//                   System.out.print(" ");
+//           }else{
+//               
+//               System.out.print("*");
+//               }
+//           }
+//           
+//           if(i<=n/2){
+//              sp++;
+//              st = st-2;
+//           }else{
+//               sp--;
+//               st = st+2;       
+//           }
+//           System.out.println("");
+//       }
+//output
+//*******
+// *   *
+//  * *
+//   *
+//  ***
+// *****
+//*******
+
+//        int n=7;
+//        for(int i=0;i<n;i++)
+//        {
+//            for(int j=1;j<=n;j++)
+//            {
+//                if(i==0)
+//                {
+//                  if(j==n || j<=n/2+1){
+//                      System.out.print("*");
+//                  }else{
+//                      System.out.print(" ");
+//                  }
+//                    
+//                }
+//                
+//                 else if(i<n/2)
+//                 {
+//                     if(j==n || j==n/2+1){
+//                      System.out.print("*");
+//                  }else{
+//                      System.out.print(" ");
+//                  }
+//                    
+//                    }
+//                    else if(i<n/2+1)
+//                    {
+//                        System.out.print("*");
+//                    }
+//                 else if(i<n-1){
+//                     if(j==1 || j==n/2+1){
+//                      System.out.print("*");
+//                  }else{
+//                      System.out.print(" ");
+//                  }
+//                     }
+//                
+//                 else if (i==n-1){
+//                    if(j==1 || j >= n/2+1){
+//                      System.out.print("*");
+//                  }else{
+//                      System.out.print(" ");
+//                  }
+//                }
+//                
+//                      
+//            }
+//            System.out.println("");
+//            
+//        }
+//        
+//output
+//****  *
+//   *  *
+//   *  *
+//*******
+//*  *   
+//*  *   
+//*  ****        
+//
+//
+//    int n=7;
+//    
+//    for(int i=1;i<=n;i++){
+//        
+//        for(int j=1;j<=n;j++){
+//            if(j==1 || j ==n){
+//                System.out.print("*");
+//                
+//            }
+//            else if(i >n/2 && (i==j|| i+j==n+1)){
+//                System.out.print(" *");
+//                
+//            }else{
+//                System.out.print("  ");
+//            }
+//        }
+//        System.out.println("");
+//    }
+//output
+//*          *
+//*          *
+//*     *    *
+//*   *   *  *
+//* *       **
+//*          *
+ 
+        
         
 } 
 }
