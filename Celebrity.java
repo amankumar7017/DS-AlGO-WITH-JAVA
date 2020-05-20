@@ -10,7 +10,7 @@ public class Celebrity{
          s.push(i);
      }
       
-      //till now stack is ready to use for celebrity
+     
       
       while(s.size()>= 2){
          int a = s.pop();
