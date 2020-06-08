@@ -1,5 +1,5 @@
 
-public class Inverse{
+public class InverseNumber{
 //inverse of a number;
     public static void main(String[] args) {
    
