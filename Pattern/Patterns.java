@@ -488,6 +488,97 @@ public class Patterns{
 //* *       **
 //*          *
  
+    //////////////////////////////////////////////////////    
+        
+        
+        // Scanner s = new Scanner(System.in);
+    	// int n  = s.nextInt();
+
+//    int n=7;
+   
+//    int  st = 1 ;
+   
+//    int sp =  n-1;
+//    int isp = -1;
+//    int st2 = -1;
+//    int k=1;
+   
+//    for(int i=1;i<=n ;i++)
+//    {
+   	 
+
+//    	 if(i <= n/2+1 ){
+//    	 	k=i;
+//    	 }
+//    	 else{
+//    	 	k = st; 
+
+//    	 }
+    
+
+//    		for(int j=1;j<=sp;j++)
+//    		{
+//    			System.out.print(" ");
+//    		}
+
+//    		for(int j=1;j<=st;j++)
+//    		{
+   			
+//    			System.out.print(k+"");
+//    			k--;
+//    		}
+
+//    		for(int j=1;j<=isp;j++)
+//    		{
+//    			System.out.print(" ");	
+//    		}
+
+//    		for(int j=1;j<=st2;j++)
+//    		{
+//    			k++;
+//    			if(i!=n)
+//    			System.out.print(k+"");
+   				
+//    		}
+
+//    		if(i<=n/2)
+//    		{
+//    			st++;
+//    			sp -=2;
+//    			isp += 2; 
+//    			st2=st;
+
+//    		}
+//    		else
+//    		{
+
+//    			 st--;
+//    			 sp +=2;
+//    			 st2 = st;
+//    			 isp -= 2; 
+//    		}
+
+//    		System.out.println();
+//    }
+
+
+  
+    
+
+//   }
+// }
+// output
+//       1
+//     21 12
+//   321   123
+// 4321     1234
+//   321   123
+//     21 12
+//       1
+
+
+
+
         
         
 } 
