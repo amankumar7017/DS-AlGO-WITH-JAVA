@@ -25,7 +25,7 @@ class RotateMatrix90{
 			}
 		}
 	}
-
+		// horizontal flip
 	public void flipHorizontally(int[][] arr){
 			for(int i=0;i<arr.length;i++){
 			for(int j=0;j<arr.length/2;j++){
@@ -37,6 +37,21 @@ class RotateMatrix90{
 			}}
 			
 	
+}
+	// vertical flip 
+// 	public void flipHorizontally(int[][] arr){
+//       for(int i=0;i < arr.length/2;i++){
+//       for(int j=0;j<arr.length;j++){
+
+//           int temp = arr[i][j];
+//           arr[i][j] = arr[arr.length-1-i][j] ;
+//           arr[arr.length-1-i][j] = temp;                     
+
+
+//       }
+//     }
+      
+  
 }
 	public static void main(String[] args) {
 		
