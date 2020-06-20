@@ -41,7 +41,7 @@ class PalindromeCheck{
 
 
 
-				boolean res = ispalindrom(str,si+=1,li-=1);// s++ && li-- will not working
+				boolean res = ispalindrom(str,si+=1,li-=1);// s++ && li-- will not work
 
 				return res;
 				
