@@ -1,5 +1,11 @@
 import java.util.*;
 class FindLongestConseqSubseq{
+	
+	
+	// longest consecutive mean -- A sequence in array  like in below Array longest consecutive is 1,2,3,4;
+	
+	// go throught this code easy to understand...
+	
 
 	static int findLongestConseqSubseq(int[] arr,int n){
 
