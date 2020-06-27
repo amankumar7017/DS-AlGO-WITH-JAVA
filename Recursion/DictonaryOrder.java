@@ -15,7 +15,7 @@ import java.util.*;
 
        //System.out.print(getPermutation("abc")); 
         ArrayList<String> ans = getPermutation(input);
-
+        Collections.sort(ans);
         // compare lexicographically.
 
         Iterator<String> itr = ans.iterator();
