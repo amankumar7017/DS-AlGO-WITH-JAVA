@@ -27,9 +27,9 @@ public class SortStack{
          int a = st.peek();
          st.pop();
 
-         reverse(st);
+         sort_step1(st);
 
-         insertAtBottom(a,st);
+         sort_step2(a,st);
        }
 
    }
