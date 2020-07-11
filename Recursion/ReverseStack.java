@@ -5,7 +5,7 @@ import java.util.*;
    public static void main(String args[]) {
 
           Stack<Integer> st = new Stack<>();
-          Stack<Integer> result = new Stack<>();
+        
           st.add(10);
           st.add(20);
           st.add(30);
