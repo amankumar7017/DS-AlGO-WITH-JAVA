@@ -139,6 +139,25 @@ public class LinkList {
         }
         return count;
     }
+     public int getMiddle()
+    {
+        if (root == null){
+            return -1;
+        }else{
+            
+            Node fast = root ;
+            Node slow = root ;
+            
+            while(fast.next !=null && fast.next.next != null ){
+                
+                fast = fast.next.next; 
+                slow = slow.next; 
+                
+            }
+            
+            return slow.data;
+            
+        }
    
      public void display(){
          System.out.println("Linked list");
@@ -175,6 +194,7 @@ public class LinkList {
           obj.display();
           obj.deleteAt(2);
           obj.display();
+          System.out.println("\nthis is middle of linkedlist "+obj.getMiddle());
    
         }
     }
