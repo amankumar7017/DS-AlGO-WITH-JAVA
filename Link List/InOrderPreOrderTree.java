@@ -11,7 +11,7 @@ class InOrderPreOrderTree{
 
 
 	static int[] in = {40,20,50,10,30};
-	static int[] pre = {10,20,40,50,30};
+	static int[] pre = {10,20,40,50,30}; // and traversal you can provide; 
 
 
 	public void constuct(){
@@ -49,9 +49,9 @@ class InOrderPreOrderTree{
 		if(node == null){
 			return ;
 		}
-
-			display(node.left);
 			System.out.println(node.data);
+			display(node.left);
+			
 			display(node.right);
 			
 
