@@ -158,7 +158,69 @@ public class LinkList {
             return slow.data;
             
         }
-   
+    public void reverseData() throws Exception
+    {
+        if(head == null){
+			 throw new Exception("Linked list is Empty Nothing At Middle");
+		}else{
+            
+			int left  = 0; 
+			int right = this.size();
+
+
+            while(left < right){
+
+            	Node ln  = getNodeAt(left);
+            	Node rn = getNodeAt(right);
+
+            	int temp = ln.data ;
+
+            	ln.data = rn.data; 
+
+            	rn.data = temp;
+
+            	left++;
+            	right--;
+
+            }
+
+          
+        }
+    }
+    public void reverseByAddress() throws Exception
+    {
+        if(head == null){
+			 throw new Exception("Linked list is Empty Nothing At Middle");
+		}else{
+            
+			
+			Node prev = this.head ;
+			Node curr = prev.next;
+
+			while(curr != null){
+
+				Node ahead = curr.next;
+
+				curr.next = prev;
+
+				prev = curr ; 
+
+				curr = ahead ;
+			}
+
+			//swap 
+
+			Node temp = this.head ;
+			head = this.tail ;
+			this.tail = temp;
+
+
+			// usually Forget
+			this.tail.next = null ;
+
+
+        }
+    }
      public void display(){
          System.out.println("Linked list");
          if(root == null){
