@@ -171,5 +171,47 @@ static    class Pair
                         + p.first + " to " + p.second);  
             } 
     } 
+    // Perfect answer 
+
+    public static int findSubarray(int[] arr ,int n) 
+{
+     HashMap<Integer,ArrayList<Integer>> map = new HashMap<>(); 
+  
+            int ans = 0;
+            int sum = 0; 
+  
+            for (int i = 0; i < n; i++)  
+            { 
+               
+               
+                sum += arr[i]; 
+    
+   
+                
+                if (sum == 0) {
+                    ans +=1;
+                   
+                }
+                
+                ArrayList<Integer> al = new ArrayList<>(); 
+                  
+                 
+               
+                if (map.containsKey(sum)) 
+                { 
+                    
+                    al = map.get(sum); 
+                   
+                   
+                   ans += al.size();
+                }
+               
+                al.add(i); 
+                map.put(sum, al); 
+            } 
+
+            return ans; 
+    }  
+
 
 }
