@@ -1,5 +1,5 @@
 import java.util.*;
-public class ReverseStack{
+public class SortStack{
     
  
    public static void main(String args[]) {
