@@ -4,31 +4,45 @@ import java.io.*;
  
 class GFG {
  
-    // Function to return GCD of a and b
-    static int gcd(int a, int b)
-    {
-        if (a == 0)
-            return b;
-        return gcd(b % a, a);
+   
+    public static void eularPhi(int n ){
+
+
+        int[] phi=new int[n+1];
+
+        for(int i = 0 ; i <=n;i++ ){
+            phi[i] = i ;
+        }
+
+        for (int i = 2;i<=n ;i++ ) {
+            
+            if(phi[i] == i){
+
+                phi[i] = i-1;
+                for (int j = 2*i;j<=n;j+=i) {
+                    phi[j] = (phi[j]*(i-1))/i;
+                }
+            }
+
+        }
+
+        for(int i = 1;i<=n ;i++){
+            System.out.println("Eular phi of "+i+" is "+phi[i]);
+        }
+
+
     }
+
+
+
+
+
  
-    // A simple method to evaluate
-    // Euler Totient Function
-    static int phi(int n)
-    {
-        int result = 1;
-        for (int i = 2; i < n; i++)
-            if (gcd(i, n) == 1)
-                result++;
-        return result;
-    }
- 
-    // Driver code
     public static void main(String[] args)
     {
-        int n;
+        int n = 12;
  
-        for (n = 1; n <= 10; n++)
-            System.out.println("phi(" + n + ") = " + phi(n));
+       
+           eularPhi(n);
     }
 }
