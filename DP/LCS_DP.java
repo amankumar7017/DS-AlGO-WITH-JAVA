@@ -1,4 +1,12 @@
 import java.util.*;
+
+// similary Question which can be solved By lcs (GFG questions);
+//   1) Longest Palindromic Subsequence
+//   2) Minimum number of deletions to make a string palindrome
+//   3) Minimum number of insertion to make a string palindrome
+
+
+
 class LCS_DP{
 	public static void main(String[] args) {
 		
