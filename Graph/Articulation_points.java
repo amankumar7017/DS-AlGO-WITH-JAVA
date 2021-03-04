@@ -1,6 +1,4 @@
-// Java program to find strongly connected 
-// components in a given directed graph 
-// using Tarjan's algorithm (single DFS) 
+
 import java.io.*; 
 import java.util.*; 
 
